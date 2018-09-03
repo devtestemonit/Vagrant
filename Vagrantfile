@@ -20,11 +20,11 @@ Vagrant.configure("2") do |config|
   
   config.vm.define "centos01" do |centos01|
     centos01.vm.hostname = "centos01"
-	centos01.vm.network "private_network", ip: "192.168.50.10"
-	centos01.vm.provider "virtualbox" do |vb|
-	  vb.memory = "2048"
-	  vb.cpus = "2"
-	end
+    centos01.vm.network "private_network", ip: "192.168.50.10"
+    centos01.vm.provider "virtualbox" do |vb|
+      vb.memory = "2048"
+      vb.cpus = "2"
+    end
   end
 
   # Disable automatic box update checking. If you disable this, then
